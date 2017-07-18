@@ -36,14 +36,14 @@ namespace COMP123_s2017_Lesson10B
             Console.WriteLine("\n");
             Console.WriteLine("********* SUPER VILLIAN *********");
             SuperHuman superVillian = new SuperVillian("Super Dude", 20);
-            superVillian.Powers.Add(new Power("Batman", 50));
-            superVillian.Powers.Add(new Power("Glactus", 40));
-            superVillian.Powers.Add(new Power("Gambit", 30));
+            superVillian.Powers.Add(new Power("Shadow Casting", 50));
+            superVillian.Powers.Add(new Power("Mind Control", 40));
+            superVillian.Powers.Add(new Power("Combat Senses", 30));
             Console.WriteLine(superVillian.ToString());
             //Console.WriteLine("Malice: "+ superVillian.Malice);
 
 
-            if(superHero is SuperHero)//checking with is keyword
+            if(superHero is SuperHero)//checking with 'is' keyword
             {
                 Console.WriteLine("Superhero is a super hero");
             }
@@ -51,6 +51,7 @@ namespace COMP123_s2017_Lesson10B
             {
                 Console.WriteLine("Superhero has karma");
             }
+            Console.WriteLine(superVillian._getPowerIndex("Combat Senses"));
            
         }
     }
