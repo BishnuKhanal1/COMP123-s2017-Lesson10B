@@ -41,6 +41,17 @@ namespace COMP123_s2017_Lesson10B
             superVillian.Powers.Add(new Power("Gambit", 30));
             Console.WriteLine(superVillian.ToString());
             //Console.WriteLine("Malice: "+ superVillian.Malice);
+
+
+            if(superHero is SuperHero)//checking with is keyword
+            {
+                Console.WriteLine("Superhero is a super hero");
+            }
+            if (superHero is IHasKarma)
+            {
+                Console.WriteLine("Superhero has karma");
+            }
+           
         }
     }
 }

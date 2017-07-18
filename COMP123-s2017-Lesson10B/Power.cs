@@ -5,7 +5,7 @@ using System.Text;
 /* Name: Bishnu Khanal
  * Date: July 13, 2017
  * Description: This is the Power class
- * Version:0.1 - Created the Power class
+ * Version:0.0.3 - Overloaded the Power operators < and > in power class
  * 
  *  GitHub Link: https://github.com/BishnuKhanal1/COMP123_s2017_Lesson10B/commits/master
  */
@@ -33,6 +33,28 @@ namespace COMP123_s2017_Lesson10B
         {
             this.Name = name;
             this.Rank = rank;
+        }
+        //public overloaded operators
+        /// <summary>
+        /// this method overloads the > for use with the power class
+        /// </summary>
+        /// <param name="lhs"></param>
+        /// <param name="rhs"></param>
+        /// <returns>Returns true if lhs.Rank > rhs.Rank</returns>
+        public static bool operator >(Power lhs, Power rhs)
+        {
+            return (lhs.Rank > rhs.Rank);
+        }
+        //public overloaded operators
+        /// <summary>
+        /// this method overloads the < for use with the power class
+        /// </summary>
+        /// <param name="lhs"></param>
+        /// <param name="rhs"></param>
+        /// <returns>Returns true if lhs.Rank < rhs.Rank</returns>
+        public static bool operator <(Power lhs, Power rhs)
+        {
+            return (lhs.Rank < rhs.Rank);
         }
     }
 }
