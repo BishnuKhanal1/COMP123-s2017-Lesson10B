@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  * Date: July 13, 2017
  * Description: COMP123 Lesson09 Lab 24
  *  * version:0.3- modified SuperVilian class class
- *  * Version:0.4 - Implmented the SuperVillion class 
+ *  * Version:0.5 - Implmented the Antihero class 
  *  
  *   GitHub Link: https://github.com/BishnuKhanal1/COMP123_s2017_Lesson10B/commits/master
  */
@@ -43,26 +43,31 @@ namespace COMP123_s2017_Lesson10B
             //Console.WriteLine("Malice: "+ superVillian.Malice);
 
 
-            if (superHero is SuperHero)//checking with 'is' keyword
-            {
-                Console.WriteLine("Superhero is a super hero");
-            }
-            if (superHero is IHasKarma)
-            {
-                Console.WriteLine("Superhero has karma");
-            }
-            Console.WriteLine(superVillian._getPowerIndex("Combat Senses"));
+            //if (superHero is SuperHero)//checking with 'is' keyword
+            //{
+            //    Console.WriteLine("Superhero is a super hero");
+            //}
+            //if (superHero is IHasKarma)
+            //{
+            //    Console.WriteLine("Superhero has karma");
+            //}
+            //Console.WriteLine(superVillian._getPowerIndex("Combat Senses"));
 
 
-            if (superVillian.GetPower("Shadow Casting") >
-               superVillian.GetPower("Combat Senses"))
-            {
-                Console.WriteLine("Combat senses ismore powerful than Mind Control");
-            }
-            else
-            {
-                Console.WriteLine("Combat senses ismore weaker than Mind Control");
-            }
+            //if (superVillian.GetPower("Shadow Casting") >
+            //   superVillian.GetPower("Combat Senses"))
+            //{
+            //    Console.WriteLine("Combat senses ismore powerful than Mind Control");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Combat senses ismore weaker than Mind Control");
+            //}
+            AntiHero batman = new AntiHero("Batman", 20, 20);
+            batman.AddPower("Super intellegence", 50);
+            Console.WriteLine(batman.ToString());
+            Console.WriteLine("Karma: "+ batman.Karma);
+            Console.WriteLine("Malice: " + batman.Karma);
         }
     }
 }

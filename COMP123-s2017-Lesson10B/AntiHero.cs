@@ -40,9 +40,6 @@ namespace COMP123_s2017_Lesson10B
 
             }
         }
-
-        
-
         //Constructors
         public AntiHero(string name, int karma, int malice):base(name)
         {
