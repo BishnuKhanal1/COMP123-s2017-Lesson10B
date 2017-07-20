@@ -116,5 +116,21 @@ namespace COMP123_s2017_Lesson10B
         {
             Console.WriteLine("Not Implemented");
         }
+        /// <summary>
+        /// This method returns the power object that matches the power name.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public Power GetPower(string name)
+        {
+            int index = this._getPowerIndex(name);
+            if(index != -1)
+            {
+                return this.Powers[ index];
+            }
+            return new Power("Power not found", 0);
+        }
+       
+        
     }
 }

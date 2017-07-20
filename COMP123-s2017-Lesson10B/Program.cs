@@ -43,7 +43,7 @@ namespace COMP123_s2017_Lesson10B
             //Console.WriteLine("Malice: "+ superVillian.Malice);
 
 
-            if(superHero is SuperHero)//checking with 'is' keyword
+            if (superHero is SuperHero)//checking with 'is' keyword
             {
                 Console.WriteLine("Superhero is a super hero");
             }
@@ -52,7 +52,17 @@ namespace COMP123_s2017_Lesson10B
                 Console.WriteLine("Superhero has karma");
             }
             Console.WriteLine(superVillian._getPowerIndex("Combat Senses"));
-           
+
+
+            if (superVillian.GetPower("Shadow Casting") >
+               superVillian.GetPower("Combat Senses"))
+            {
+                Console.WriteLine("Combat senses ismore powerful than Mind Control");
+            }
+            else
+            {
+                Console.WriteLine("Combat senses ismore weaker than Mind Control");
+            }
         }
     }
 }
